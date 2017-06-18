@@ -7,6 +7,7 @@
 knitr::opts_chunk$set(echo = TRUE)
 library(dplyr)
 library(lattice)
+unzip("./activity.zip")
 testData <- read.csv("activity.csv")
 ```
 
