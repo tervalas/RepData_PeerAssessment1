@@ -34,6 +34,13 @@ plot(avgSteps$interval, avgSteps$AvgSteps, type="l", main="Average Daily Activit
 ```
 
 
+## Maximum number of steps
+```{r maxSteps}
+maxStepRow <- filter(avgSteps, AvgSteps == max(avgSteps$AvgSteps))
+```
+
+The interval with the maximum average steps is interval `r maxStepRow$interval` which averaged `r max(avgSteps$AvgSteps)` steps.
+
 ## Inputing missing values
 ```{r missingValues}
 numNA <- nrow(filter(testData,is.na(steps)))

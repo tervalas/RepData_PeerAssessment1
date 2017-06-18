@@ -36,10 +36,18 @@ plot(avgSteps$interval, avgSteps$AvgSteps, type="l", main="Average Daily Activit
 ![](PA1_template_files/figure-html/averageActivity-1.png)<!-- -->
 
 
+## Maximum number of steps
+
+```r
+maxStepRow <- filter(avgSteps, AvgSteps == max(avgSteps$AvgSteps))
+```
+
+The interval with the maximum average steps is interval 835 which averaged 206.1698113 steps.
+
 ## Inputing missing values
 
 ```r
-numNA <- nrow(filter(testData,is.na(steps))) + nrow(filter(testData,is.na(date))) + nrow(filter(testData,is.na(interval)))
+numNA <- nrow(filter(testData,is.na(steps)))
 ```
 
 The data set contains 2304 rows with NA values
