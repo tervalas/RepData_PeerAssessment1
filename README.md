@@ -1,3 +1,17 @@
+# Reproducable Data Peer Assessment Assignment 1
+
+This is my submission for assignment one for Reproducable Data. The following
+files and directories are included:
+
+README.md - This read me markdown file
+PA1_template.Rmd - Rmarkdown file for the assignment
+PA1_template.md - intermediate markdown file created by RStudio
+PA1_template.html - html version of Rmarkdown file created by RStudio
+PA1_template_files/ - contains /figure-html directory that holds figures contained in PA1_template.Rmd
+
+All other files/directories remain from forked version of instructor's repository.
+
+
 ## Introduction
 
 It is now possible to collect a large amount of data about personal
